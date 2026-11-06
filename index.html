@@ -592,9 +592,9 @@ function finishCard(i,icon,head,msg,kind){
   document.querySelectorAll("[data-opt]").forEach(b=>{b.disabled=true; const k=+b.dataset.opt; if(k===c.ans) b.classList.add("right"); else if(k===i) b.classList.add("wrong");});
   document.querySelectorAll(".wild").forEach(b=>b.disabled=true);
   const term=TERMS.find(x=>x.es===c.term), fb=document.getElementById("fb");
-  fb.innerHTML=`<div class="fb ${kind}"><span class="big" aria-hidden="true">${icon}</span><p class="head">${head}</p><p>${msg}</p><p>${c.exp} <br>Repasa: <button class="linkbtn" type="button" data-go="${term.id}">${term.id} ${term.es}</button></p></div>
+  fb.innerHTML=`<div class="fb ${kind}"><span class="big" aria-hidden="true">${icon}</span><p class="head">${head}</p><p>${msg}</p><p>${c.exp} <br>${kind==="ok"?"📘 Aprende más en el glosario:":kind==="skip"?"📘 Estudia este término:":"📘 Repasa en el glosario:"} <button class="linkbtn" type="button" data-go="${term.id}">${term.id} ${term.es}</button></p></div>
     <div class="row" style="margin-top:12px"><button class="btn big" type="button" id="next" style="flex:1">${t.pos>=GOAL?"Ver podio 🏆":"Siguiente turno →"}</button></div>`;
-  if(isMobile()) fb.scrollIntoView({block:"nearest",behavior:REDUCED?"auto":"smooth"});
+  setTimeout(()=>document.getElementById("next").scrollIntoView({block:"nearest",behavior:REDUCED?"auto":"smooth"}),120);
   document.getElementById("next").onclick=()=>{
     if(t.pos>=GOAL){G.stage="win";showFinal();return;}
     G.cur=(G.cur+1)%G.teams.length; G.stage="type"; G.type=null; G.card=null; render();
