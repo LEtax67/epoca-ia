@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>IA en Juego · Entrega · Inteligencia Artificial I</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%2314213D'/%3E%3Ccircle cx='32' cy='32' r='17' fill='none' stroke='%23F0B847' stroke-width='5' stroke-dasharray='80 27' stroke-linecap='round'/%3E%3Ccircle cx='32' cy='32' r='6' fill='%233FC7B4'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#F2F5F9;--grid:#E1E8F0;--ink:#14213D;--muted:#56627A;--panel:#fff;--line:#D3DCE7;--accent:#4C5BD4;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#0E1522;--grid:#172234;--ink:#E7EDF6;--muted:#9AA8BE;--panel:#152033;--line:#2A3A52;--accent:#8C97F2;color-scheme:dark}}
+:root[data-theme="dark"]{--paper:#0E1522;--grid:#172234;--ink:#E7EDF6;--muted:#9AA8BE;--panel:#152033;--line:#2A3A52;--accent:#8C97F2;color-scheme:dark}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background-color:var(--paper);color:var(--ink);background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:28px 28px;font-family:"Atkinson Hyperlegible",system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.55}
+.wrap{max-width:900px;margin:0 auto;padding:28px 18px 60px}
+h1,h2{font-family:"Bricolage Grotesque",system-ui,sans-serif;margin:0;line-height:1.1}
+h1{font-size:clamp(2.2rem,6vw,3.4rem);letter-spacing:-.03em}
+.sub{color:var(--muted);margin:8px 0 22px}
+.brand{display:flex;gap:12px;align-items:center;margin-bottom:18px}
+.brand svg{width:44px;height:44px}
+.list{display:grid;gap:10px}
+a.item{display:grid;grid-template-columns:auto 1fr auto;gap:14px;align-items:center;background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:16px;text-decoration:none;color:inherit;box-shadow:0 1px 2px rgba(0,0,0,.05),0 8px 24px rgba(20,33,61,.07)}
+a.item:hover{border-color:var(--accent)}
+.num{font-family:"Bricolage Grotesque",system-ui,sans-serif;font-weight:800;font-size:1.4rem;color:var(--accent);width:2.2ch}
+.item b{display:block;font-size:1.05rem}
+.item span{color:var(--muted);font-size:.9rem}
+.go{font-weight:700;color:var(--accent);white-space:nowrap}
+.grid2{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:18px;margin-top:22px;align-items:start}
+@media (max-width:640px){.grid2{grid-template-columns:minmax(0,1fr)}a.item{grid-template-columns:auto 1fr}.go{display:none}}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:16px}
+.qr{text-align:center;font-size:.85rem;color:var(--muted)}
+.qr img{width:170px;height:170px;border-radius:10px;background:#fff;padding:6px}
+small{color:var(--muted)}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+</style>
+</head>
+<body><div class="wrap">
+<div class="brand"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="16" fill="#14213D"/><circle cx="32" cy="32" r="17" fill="none" stroke="#F0B847" stroke-width="5" stroke-dasharray="80 27" stroke-linecap="round"/><circle cx="32" cy="32" r="6" fill="#3FC7B4"/></svg><small>Inteligencia Artificial I · Reto académico colaborativo</small></div>
+<h1>IA en Juego</h1>
+<p class="sub">Glosario académico de inteligencia artificial y juego educativo «ÉPOCA: entrena tu modelo».<br>Ingrid Liseth Roa Manrique · Jeimi Lorena Castro Cupa · Juan Sebastian Gil · 6 de noviembre de 2026</p>
+<div class="list">
+  <a class="item" href="01_Glosario_final.pdf"><span class="num">01</span><span><b>Glosario final (PDF)</b><span>60 términos en 12 ejes + ampliación, índices, citas IEEE, bibliografía, matriz de trazabilidad y nota metodológica.</span></span><span class="go">Abrir</span></a>
+  <a class="item" href="index.html"><span class="num">02</span><span><b>Juego funcional</b><span>30 retos en 3 niveles y 6 tipos de desafío, validación automática y glosario web con búsqueda.</span></span><span class="go">Jugar</span></a>
+  <a class="item" href="03_Reglamento_del_juego.pdf"><span class="num">03</span><span><b>Reglamento del juego (PDF)</b><span>Reglas autosuficientes, banco de retos con respuestas y registro de prueba.</span></span><span class="go">Abrir</span></a>
+  <a class="item" href="04_Fuentes_y_evidencias/Matriz_de_fuentes.xlsx"><span class="num">04</span><span><b>Matriz de fuentes (Excel)</b><span>18 fuentes con localizadores, fichas asociadas y estado de verificación.</span></span><span class="go">Descargar</span></a>
+  <a class="item" href="https://github.com/LEtax67/epoca-ia/tree/main/04_Fuentes_y_evidencias"><span class="num">04</span><span><b>Fuentes y evidencias</b><span>Registro de la prueba del juego y evidencias.</span></span><span class="go">Ver</span></a>
+</div>
+<div class="grid2">
+  <div class="panel"><h2 style="font-size:1.2rem;margin-bottom:6px">05 · Enlace público</h2><p style="margin:0">Juego y glosario web: <a href="index.html" style="color:var(--accent);font-weight:700">letax67.github.io/epoca-ia</a><br><small>No requiere cuenta ni instalación. El uso de asistentes de IA se declara en el Anexo B del glosario.</small></p></div>
+  <div class="qr"><img src="05_Enlace_publico/QR_juego_y_glosario.png" alt="Código QR que abre el juego"><br>Escanea para jugar</div>
+</div>
+</div></body></html>
